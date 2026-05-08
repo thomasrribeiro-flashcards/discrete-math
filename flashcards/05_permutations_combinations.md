@@ -35,6 +35,9 @@ S:
 
 ## 5.3 Combinations
 
+Q: A problem says "select $k$ people from $n$." Is it permutation or combination?
+A: Combination — "select" implies unordered. If the problem says "arrange" or specifies distinct roles (gold/silver/bronze, president/VP/treasurer), it's permutation.
+
 C: A [combination] $C(n, k) = \binom{n}{k} = \frac{n!}{k!(n-k)!}$ is the number of $k$-element subsets of an $n$-element set.
 
 Q: Why does $\binom{n}{k} = P(n, k)/k!$?

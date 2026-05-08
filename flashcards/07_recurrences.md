@@ -35,6 +35,9 @@ S:
 
 ## 7.3 Linear Homogeneous Recurrences
 
+Q: You see a recurrence $a_n = c_1 a_{n-1} + \dots + c_k a_{n-k}$ (linear homogeneous, constant coefficients). What's the standard solution path?
+A: Form the characteristic equation $r^k - c_1 r^{k-1} - \dots - c_k = 0$, find roots, write $a_n$ as a linear combination of $r_i^n$ (or $n^j r_i^n$ for repeated roots), fix constants from initial conditions.
+
 C: A [linear homogeneous recurrence with constant coefficients] has the form $a_n = c_1 a_{n-1} + c_2 a_{n-2} + \dots + c_k a_{n-k}$, with $c_k \neq 0$; "order $k$" refers to the depth of the look-back.
 
 Q: Why does the ansatz $a_n = r^n$ work for linear homogeneous recurrences?
