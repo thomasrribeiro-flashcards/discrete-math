@@ -1,6 +1,6 @@
 +++
 order = 7
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "recurrences", "fibonacci", "characteristic-equation", "closed-form"]
 +++
 
@@ -13,8 +13,8 @@ C: A [recurrence relation] for a sequence $(a_n)$ expresses $a_n$ as a function 
 Q: Why do recurrences show up everywhere in algorithm analysis?
 A: Because divide-and-conquer algorithms naturally produce recurrences: if a problem of size $n$ splits into subproblems and takes $T(n-1)$ or $T(n/2)$ etc., its running time satisfies a recurrence. Solving the recurrence gives asymptotic running time.
 
-Q: Give three classic recurrence sequences.
-A: (i) Arithmetic: $a_n = a_{n-1} + d$. (ii) Geometric: $a_n = r a_{n-1}$. (iii) Fibonacci: $F_n = F_{n-1} + F_{n-2}$ with $F_0 = 0, F_1 = 1$. The first two have simple closed forms; Fibonacci's is more involved.
+Q: What recurrences define the arithmetic, geometric, and Fibonacci sequences?
+A: Arithmetic: $a_n = a_{n-1} + d$. Geometric: $a_n = r a_{n-1}$. Fibonacci: $F_n = F_{n-1} + F_{n-2}$ with $F_0 = 0, F_1 = 1$. The first two have simple closed forms; Fibonacci's is more involved.
 
 ## 7.2 Solving by Iteration
 

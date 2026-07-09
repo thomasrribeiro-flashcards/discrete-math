@@ -1,6 +1,6 @@
 +++
 order = 4
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "counting", "pigeonhole", "multiplication-rule", "bijection"]
 +++
 
@@ -44,7 +44,7 @@ S:
 
 ## 4.4 Combining Addition and Multiplication
 
-P: How many strings of length $8$ over $\{A, B, C\}$ have length $8$ AND begin with either $AA$ or $BBB$?
+P: How many strings of length $8$ over $\{A, B, C\}$ begin with either $AA$ or $BBB$?
 
 S:
 **IDENTIFY**: Mixed conditions; split into disjoint cases.

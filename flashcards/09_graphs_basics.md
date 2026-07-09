@@ -1,6 +1,6 @@
 +++
 order = 9
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "graphs", "degree", "paths", "connectivity", "bipartite", "isomorphism"]
 +++
 
@@ -8,7 +8,7 @@ tags = ["math", "discrete-math", "graphs", "degree", "paths", "connectivity", "b
 
 ## 9.1 What Is a Graph?
 
-C: A [graph] $G = (V, E)$ consists of a set $V$ of [vertices] and a set $E$ of [edges], where each edge is an unordered pair $\{u, v\} \subseteq V$ (for a simple undirected graph).
+C: A graph $G = (V, E)$ consists of a set $V$ of [vertices] and a set $E$ of [edges], where each edge is an unordered pair $\{u, v\} \subseteq V$ (for a simple undirected graph).
 
 Q: Why are graphs one of the most important structures in computer science?
 A: Because they model relationships: networks, road maps, web links, social connections, dependency graphs, state spaces, circuit diagrams, control flow. A huge swath of algorithms operates on graphs — shortest paths, search, coloring, flow, matching, partitioning. Mastering graphs is mastering an entire algorithmic vocabulary.
@@ -98,8 +98,8 @@ C: Two graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$ are [isomorphic] if ther
 Q: Why is graph isomorphism a subtle problem?
 A: Because two graphs can "look different" (different labelings, different drawings) while being structurally identical. No polynomial algorithm is known for general graph isomorphism (though a quasi-polynomial algorithm exists — Babai 2016). Cheap necessary checks: same vertex count, same edge count, same degree sequence — but these are not sufficient.
 
-Q: Are $K_{3,3}$ and $K_6$ isomorphic?
-A: No. $K_6$ has $\binom{6}{2} = 15$ edges; $K_{3,3}$ (complete bipartite) has $3 \cdot 3 = 9$ edges. Different edge counts ⇒ not isomorphic. This is the easy direction — one counterexample to a necessary condition rules out isomorphism instantly.
+Q: Why are $K_{3,3}$ and $K_6$ not isomorphic?
+A: $K_6$ has $\binom{6}{2} = 15$ edges; $K_{3,3}$ (complete bipartite) has $3 \cdot 3 = 9$ edges. Different edge counts ⇒ not isomorphic. This is the easy direction — one counterexample to a necessary condition rules out isomorphism instantly.
 
 ## 9.11 Subgraphs
 
@@ -112,7 +112,7 @@ A: A subgraph can drop edges between $V'$-vertices; an induced subgraph includes
 
 ## 9.12 Graph Coloring (Preview)
 
-C: A [proper $k$-coloring] of a graph $G$ assigns each vertex one of $k$ colors so that adjacent vertices get different colors; the [chromatic number] $\chi(G)$ is the smallest $k$ admitting a proper $k$-coloring.
+C: A [proper $k$-coloring] of a graph $G$ assigns each vertex one of $k$ colors so that adjacent vertices get different colors; the [chromatic number] $\chi(G)$ is the smallest $k$ for which such a coloring exists.
 
 Q: What is the chromatic number of a bipartite graph?
-A: Exactly $2$ (if it has at least one edge) — the bipartition gives a valid $2$-coloring; a graph with an edge needs at least $2$ colors. Thus "bipartite" and "$2$-colorable" are the same thing for graphs with at least one edge. Chromatic number will be explored further in the next chapter.
+A: Exactly $2$ (if it has at least one edge) — the bipartition gives a valid $2$-coloring; a graph with an edge needs at least $2$ colors. Thus "bipartite" and "$2$-colorable" are the same thing for graphs with at least one edge.

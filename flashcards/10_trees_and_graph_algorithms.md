@@ -1,6 +1,6 @@
 +++
 order = 10
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "trees", "spanning-tree", "euler", "hamiltonian", "planar", "coloring"]
 +++
 
@@ -12,8 +12,11 @@ C: A [tree] is a connected, undirected, acyclic graph.
 
 C: A [forest] is an acyclic graph (possibly disconnected) — each connected component is a tree.
 
-Q: Give four equivalent characterizations of a tree on $n$ vertices.
-A: Let $T$ have $n \geq 1$ vertices. The following are equivalent: (i) $T$ is connected and acyclic; (ii) $T$ is connected with exactly $n-1$ edges; (iii) $T$ is acyclic with exactly $n-1$ edges; (iv) between every pair of vertices there is exactly one path. Any of these can be the definition; the others are theorems.
+Q: A tree is defined as connected and acyclic. Which two edge-count conditions on an $n$-vertex graph are each equivalent to being a tree?
+A: (i) connected with exactly $n-1$ edges; (ii) acyclic with exactly $n-1$ edges. Either can serve as the definition; the others become theorems.
+
+Q: A tree is defined as connected and acyclic. Which path-uniqueness condition on a graph is equivalent to being a tree?
+A: Between every pair of vertices there is exactly one path.
 
 Q: Why does a tree have exactly $n - 1$ edges?
 A: Build the tree by adding edges one at a time. Start with $n$ isolated vertices ($n$ components). Each new edge that doesn't create a cycle joins two components into one, decreasing the component count by $1$. To reach $1$ component (connectedness) without cycles, we need exactly $n - 1$ edges.
@@ -22,12 +25,14 @@ A: Build the tree by adding edges one at a time. Start with $n$ isolated vertice
 
 C: A [leaf] of a tree is a vertex of degree $1$; a non-leaf is an [internal vertex].
 
-Q: Does every tree with at least $2$ vertices have at least $2$ leaves?
-A: Yes. If $T$ has $n \geq 2$ vertices, $\sum \deg(v) = 2(n-1) < 2n$. If fewer than $2$ leaves existed, at least $n-1$ vertices would have degree $\geq 2$, forcing $\sum \deg(v) \geq 2(n-1) + 1 > 2(n-1)$ — contradiction. Intuition: a tree must "end somewhere," on both ends.
+Q: Why does every tree with at least $2$ vertices have at least $2$ leaves?
+A: If $T$ has $n \geq 2$ vertices, $\sum \deg(v) = 2(n-1) < 2n$. If fewer than $2$ leaves existed, at least $n-1$ vertices would have degree $\geq 2$, forcing $\sum \deg(v) \geq 2(n-1) + 1 > 2(n-1)$ — contradiction. Intuition: a tree must "end somewhere," on both ends.
 
 ## 10.3 Rooted Trees
 
-C: A [rooted tree] designates one vertex as the [root]; every other vertex has a unique path to the root. Vertices on that path are [ancestors]; children are neighbors further from the root.
+C: A [rooted tree] designates one vertex as the root; every other vertex has a unique path to the root.
+
+C: In a rooted tree, the vertices on the unique path from a vertex to the root are its [ancestors]; its [children] are its neighbors further from the root.
 
 Q: Why are rooted trees the natural structure for hierarchical data?
 A: Because many data structures (file systems, parse trees, syntax trees, decision trees, heaps) naturally have a "top" with children beneath. Rooting a tree establishes parent/child direction, enables recursion on subtrees, and makes algorithms (tree traversal, DP on trees) straightforward.
@@ -78,7 +83,7 @@ A: Iff exactly two vertices have odd degree (these are the path's endpoints). Al
 
 ## 10.7 Hamiltonian Paths and Cycles
 
-C: A [Hamiltonian path] visits every VERTEX exactly once; a [Hamiltonian cycle] is a Hamiltonian path that returns to its start.
+C: A [Hamiltonian path] visits every VERTEX exactly once; a [Hamiltonian cycle] does the same and returns to its start.
 
 Q: Why is finding a Hamiltonian cycle hard?
 A: Because HAMILTONIAN CYCLE is NP-complete — no known polynomial algorithm. Contrast with EULERIAN CIRCUIT, solvable in linear time. The degree characterization for Euler doesn't have an analogue for Hamilton; only sufficient conditions exist (Dirac's theorem: $\deg(v) \geq n/2$ for all $v$ suffices). TSP is the weighted-optimization version.
@@ -111,8 +116,17 @@ A: Every planar graph can be properly colored with at most $4$ colors. Hence no 
 
 ## 10.10 Shortest Path Algorithms
 
-Q: Name three classic shortest-path algorithms and their scope.
-A: (i) [BFS]: unweighted graphs, single-source, $O(|V| + |E|)$. (ii) [Dijkstra]: nonnegative weights, single-source, $O((|V| + |E|) \log |V|)$ with a heap. (iii) [Bellman–Ford]: any weights (handles negatives; detects negative cycles), single-source, $O(|V| \cdot |E|)$. For all-pairs, [Floyd–Warshall] runs in $\Theta(|V|^3)$.
+Q: Which algorithm computes single-source shortest paths in an UNWEIGHTED graph, and in what time?
+A: BFS, in $O(|V| + |E|)$.
+
+Q: What is the scope and running time of Dijkstra's algorithm?
+A: Single-source shortest paths with nonnegative edge weights; $O((|V| + |E|) \log |V|)$ with a heap.
+
+Q: When is Bellman–Ford needed instead of Dijkstra for shortest paths, and what is its running time?
+A: When edge weights can be negative (it also detects negative cycles); single-source, $O(|V| \cdot |E|)$.
+
+Q: Which classic algorithm computes ALL-PAIRS shortest paths, and in what time?
+A: Floyd–Warshall, in $\Theta(|V|^3)$.
 
 ## 10.11 Graph Traversal Decisions
 

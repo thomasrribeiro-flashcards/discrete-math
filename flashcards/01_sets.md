@@ -1,6 +1,6 @@
 +++
 order = 1
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "sets", "cardinality", "power-set", "cartesian-product"]
 +++
 
@@ -92,7 +92,7 @@ A: Order matters for pairs: $(1, 2) \neq (2, 1)$ as ordered pairs, but $\{1, 2\}
 Q: If $|A| = m$ and $|B| = n$ (both finite), what is $|A \times B|$?
 A: $|A \times B| = mn$. Each ordered pair is formed by an independent choice of first coordinate ($m$ options) and second coordinate ($n$ options), so the multiplication rule applies.
 
-Q: How do you generalize to $A_1 \times A_2 \times \dots \times A_k$?
+Q: How does the Cartesian product generalize to $k$ sets $A_1 \times A_2 \times \dots \times A_k$, and what is its cardinality?
 A: Elements are $k$-tuples $(a_1, a_2, \dots, a_k)$ with $a_i \in A_i$, and $|A_1 \times \dots \times A_k| = |A_1| \cdot |A_2| \cdots |A_k|$ for finite sets. In particular $A^k = A \times A \times \dots \times A$ ($k$ copies) has size $|A|^k$.
 
 ## 1.9 Power Set
@@ -117,7 +117,7 @@ S:
 3. There are $2^n$ functions $A \to \{0,1\}$ — each of the $n$ elements chooses independently from two values.
 4. So $|\mathcal{P}(A)| = 2^n = 2^{|A|}$.
 
-**EVALUATE**: The bijective counting argument is how combinatorics proves $|\text{thing}|$ equals a specific number — find a bijection to something with a known count. The indicator-function bijection is the canonical tool for subset counting.
+**EVALUATE**: Check small cases: $n = 0$ gives $\mathcal{P}(\emptyset) = \{\emptyset\}$ with $1 = 2^0$ subset; $n = 1$ gives $2 = 2^1$. The bijective counting argument is how combinatorics proves $|\text{thing}|$ equals a specific number — find a bijection to something with a known count; the indicator-function bijection is the canonical tool for subset counting.
 
 ## 1.10 Disjoint Union and Partitions
 

@@ -1,6 +1,6 @@
 +++
 order = 2
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "relations", "equivalence", "partial-order", "reflexive", "transitive"]
 +++
 
@@ -41,7 +41,7 @@ A: Because a relation can be both (the equality relation satisfies both: $a = b$
 
 ## 2.4 Checking Properties
 
-P: Determine which properties the relation $R$ on $\mathbb{Z}$ defined by $a\,R\,b \Leftrightarrow a + b$ is even satisfies.
+P: Determine which of reflexive, symmetric, antisymmetric, and transitive are satisfied by the relation $R$ on $\mathbb{Z}$ defined by: $a\,R\,b$ iff $a + b$ is even.
 
 S:
 **IDENTIFY**: Classify a relation by its properties.
@@ -84,7 +84,7 @@ Q: Why is the divisibility relation $\mid$ on $\mathbb{Z}^+$ a partial order?
 A: (i) Reflexive: $a \mid a$ for every positive $a$. (ii) Antisymmetric: $a \mid b$ and $b \mid a$ for positive integers force $a = b$. (iii) Transitive: $a \mid b$ and $b \mid c$ give $a \mid c$. So $(\mathbb{Z}^+, \mid)$ is a poset.
 
 Q: How does a partial order differ from a total order?
-A: A [total order] additionally satisfies: $\forall a, b\, (a\,R\,b \lor b\,R\,a)$ — every pair is comparable. In a partial order, some pairs may be incomparable. Example: under divisibility on $\mathbb{Z}^+$, $2$ and $3$ are incomparable ($2 \nmid 3$ and $3 \nmid 2$). Under $\leq$ on $\mathbb{Z}$, every pair is comparable — a total order.
+A: A total order additionally satisfies: $\forall a, b\, (a\,R\,b \lor b\,R\,a)$ — every pair is comparable. In a partial order, some pairs may be incomparable. Example: under divisibility on $\mathbb{Z}^+$, $2$ and $3$ are incomparable ($2 \nmid 3$ and $3 \nmid 2$). Under $\leq$ on $\mathbb{Z}$, every pair is comparable — a total order.
 
 ## 2.8 Comparable and Chain
 
@@ -108,8 +108,8 @@ C: In a poset $(A, \leq)$, $m \in A$ is a [maximal element] if no element is str
 
 C: $M \in A$ is the [maximum] (greatest element) if $a \leq M$ for every $a \in A$.
 
-Q: Can a poset have multiple maximal elements? Multiple maxima?
-A: Multiple maximal elements, yes — if $\{a, b\}$ are incomparable and both have nothing above them. Multiple maxima, no — a maximum must dominate everything, so two maxima would have to dominate each other, and antisymmetry would force them equal.
+Q: Why can a poset have multiple maximal elements but never multiple maxima?
+A: Multiple maximal elements arise when incomparable elements each have nothing above them. Multiple maxima are impossible — a maximum must dominate everything, so two maxima would have to dominate each other, and antisymmetry would force them equal.
 
 ## 2.11 Closures of Relations
 

@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "discrete-math", "functions", "injective", "surjective", "bijective", "inverse"]
 +++
 
@@ -13,7 +13,9 @@ C: A [function] $f: A \to B$ is a relation from $A$ to $B$ such that for every $
 Q: Why is "every $a$ has exactly one $b$" the defining property of a function?
 A: Because functions model DETERMINISTIC mappings: given an input, the output is uniquely determined. Allowing multiple outputs would give a general relation (or a "multi-function"); allowing no output for some inputs would give a partial function. Total, single-valued — that's what we call a function.
 
-C: For $f: A \to B$, $A$ is the [domain], $B$ is the [codomain], and the [range] (or image) is $f(A) = \{f(a) : a \in A\} \subseteq B$.
+C: For $f: A \to B$, $A$ is the [domain] and $B$ is the [codomain].
+
+C: For $f: A \to B$, the [range] (or image) is $f(A) = \{f(a) : a \in A\} \subseteq B$.
 
 Q: Why must the codomain be distinguished from the range?
 A: Because the codomain is a design choice (what type of output is allowed), while the range is the actual set of outputs produced. Function $f: \mathbb{Z} \to \mathbb{Z}$ with $f(n) = n^2$ has codomain $\mathbb{Z}$ but range $\{0, 1, 4, 9, 16, \dots\}$ — the non-negative squares. Two functions with the same formula but different codomains are considered different functions (this matters for surjectivity).
@@ -78,11 +80,11 @@ C: If $f: A \to B$ and $g: B \to C$, the [composition] $g \circ f : A \to C$ is 
 Q: Why does composition require the codomain of $f$ to match the domain of $g$?
 A: Because $g$ can only be applied to elements of its domain. If $f: A \to B$ and $g: B \to C$, then $f(a) \in B$ is a valid input to $g$. Writing $g \circ f$ when $f$'s range overlaps but doesn't lie entirely in $g$'s domain is undefined.
 
-Q: If $f$ and $g$ are injective, is $g \circ f$ injective?
-A: Yes. Suppose $(g \circ f)(a_1) = (g \circ f)(a_2)$, i.e., $g(f(a_1)) = g(f(a_2))$. By $g$ injective, $f(a_1) = f(a_2)$. By $f$ injective, $a_1 = a_2$. Composition preserves injectivity.
+Q: For injective $f: A \to B$ and $g: B \to C$, why is $g \circ f$ injective?
+A: Suppose $(g \circ f)(a_1) = (g \circ f)(a_2)$, i.e., $g(f(a_1)) = g(f(a_2))$. By $g$ injective, $f(a_1) = f(a_2)$. By $f$ injective, $a_1 = a_2$. Composition preserves injectivity.
 
-Q: If $f$ and $g$ are surjective, is $g \circ f$ surjective?
-A: Yes. Let $c \in C$. By $g$ surjective, there's $b \in B$ with $g(b) = c$. By $f$ surjective, there's $a \in A$ with $f(a) = b$. Then $(g \circ f)(a) = g(b) = c$. Composition preserves surjectivity (and therefore bijectivity).
+Q: For surjective $f: A \to B$ and $g: B \to C$, why is $g \circ f$ surjective?
+A: Let $c \in C$. By $g$ surjective, there's $b \in B$ with $g(b) = c$. By $f$ surjective, there's $a \in A$ with $f(a) = b$. Then $(g \circ f)(a) = g(b) = c$. Composition preserves surjectivity (and therefore bijectivity).
 
 ## 3.6 Inverse Functions
 
