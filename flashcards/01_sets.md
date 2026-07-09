@@ -18,7 +18,7 @@ A: Logic provides the language of proof; discrete math applies that language to 
 
 C: A [set] is an unordered collection of distinct objects, written with braces: $\{1, 2, 3\}$ or $\{x : P(x)\}$.
 
-C: The membership relation $x \in A$ means "$x$ is an element of $A$"; $x \notin A$ means it is not.
+C: The [membership] relation $x \in A$ means "$x$ is an element of $A$"; $x \notin A$ means it is not.
 
 Q: Why are $\{1, 2, 2, 3\}$ and $\{1, 2, 3\}$ the same set?
 A: Because sets are collections of DISTINCT objects — repeated listings don't create duplicate elements. The shorthand $\{1, 2, 2, 3\}$ denotes exactly the same set as $\{1, 2, 3\}$, namely the set whose elements are $1$, $2$, and $3$. For counting multiplicities, you need multisets, which are a different structure.
@@ -50,7 +50,7 @@ A: Because different textbooks and traditions choose differently. Computer scien
 
 C: $A \subseteq B$ (A is a [subset] of B) iff $\forall x\, (x \in A \rightarrow x \in B)$.
 
-C: $A = B$ iff $A \subseteq B$ and $B \subseteq A$.
+C: $A = B$ iff $A \subseteq B$ and [$B \subseteq A$].
 
 C: $A \subsetneq B$ ($A$ is a [proper subset]) iff $A \subseteq B$ and $A \neq B$.
 

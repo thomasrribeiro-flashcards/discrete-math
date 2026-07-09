@@ -47,7 +47,7 @@ C: The [characteristic equation] of $a_n = c_1 a_{n-1} + \dots + c_k a_{n-k}$ is
 
 ## 7.4 Distinct Roots
 
-C: If the characteristic equation has $k$ distinct roots $r_1, \dots, r_k$, then $a_n = \alpha_1 r_1^n + \alpha_2 r_2^n + \dots + \alpha_k r_k^n$, with constants $\alpha_i$ fixed by the initial conditions.
+C: If the characteristic equation has $k$ distinct roots $r_1, \dots, r_k$, then $a_n =$ [$\alpha_1 r_1^n + \alpha_2 r_2^n + \dots + \alpha_k r_k^n$], with constants $\alpha_i$ fixed by the initial conditions.
 
 P: Solve the Fibonacci recurrence $F_n = F_{n-1} + F_{n-2}$ with $F_0 = 0$, $F_1 = 1$.
 S:
