@@ -63,7 +63,7 @@ C: A relation $R$ on $A$ is an [equivalence relation] if it is reflexive, symmet
 Q: What do equivalence relations formalize?
 A: The notion of "sameness in some respect." Equality is an equivalence relation, but so are "has the same birthday," "is congruent mod $n$," "has the same remainder when divided by $3$." The three axioms — reflexive (things are same as themselves), symmetric (sameness is directionless), transitive (same chains) — capture exactly the structure of "being equivalent under some criterion."
 
-C: The [equivalence class] of $a \in A$ under $R$ is $[a] = \{x \in A : x\,R\,a\}$.
+C: The [equivalence class] of $a \in A$ under $R$ is $\lbrack a\rbrack  = \{x \in A : x\,R\,a\}$.
 
 Q: What is the equivalence class of $2$ under congruence mod $5$ on $\mathbb{Z}$?
 A: $[2]_5 = \{x \in \mathbb{Z} : x \equiv 2 \pmod 5\} = \{\dots, -8, -3, 2, 7, 12, 17, \dots\}$. All integers with remainder $2$ when divided by $5$.
