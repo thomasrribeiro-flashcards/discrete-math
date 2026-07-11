@@ -1,6 +1,6 @@
 +++
 order = 2
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "relations", "equivalence", "partial-order", "reflexive", "transitive"]
 +++
 

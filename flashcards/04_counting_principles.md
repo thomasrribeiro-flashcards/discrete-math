@@ -1,6 +1,6 @@
 +++
 order = 4
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "counting", "pigeonhole", "multiplication-rule", "bijection"]
 +++
 

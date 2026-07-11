@@ -1,6 +1,6 @@
 +++
 order = 8
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "number-theory", "gcd", "euclidean-algorithm", "modular-arithmetic", "crt"]
 +++
 

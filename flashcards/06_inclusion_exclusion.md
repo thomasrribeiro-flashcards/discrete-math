@@ -1,6 +1,6 @@
 +++
 order = 6
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "inclusion-exclusion", "derangements", "combinatorics"]
 +++
 

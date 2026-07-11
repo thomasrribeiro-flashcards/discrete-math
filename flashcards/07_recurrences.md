@@ -1,6 +1,6 @@
 +++
 order = 7
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "recurrences", "fibonacci", "characteristic-equation", "closed-form"]
 +++
 

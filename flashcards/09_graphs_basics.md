@@ -1,6 +1,6 @@
 +++
 order = 9
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "graphs", "degree", "paths", "connectivity", "bipartite", "isomorphism"]
 +++
 

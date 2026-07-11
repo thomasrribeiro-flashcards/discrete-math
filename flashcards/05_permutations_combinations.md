@@ -1,6 +1,6 @@
 +++
 order = 5
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "permutations", "combinations", "binomial-theorem", "pascal"]
 +++
 

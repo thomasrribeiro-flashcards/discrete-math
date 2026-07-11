@@ -1,6 +1,6 @@
 +++
 order = 10
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "trees", "spanning-tree", "euler", "hamiltonian", "planar", "coloring"]
 +++
 

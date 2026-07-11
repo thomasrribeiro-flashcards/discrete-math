@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "functions", "injective", "surjective", "bijective", "inverse"]
 +++
 

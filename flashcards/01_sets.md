@@ -1,6 +1,6 @@
 +++
 order = 1
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "discrete-math", "sets", "cardinality", "power-set", "cartesian-product"]
 +++
 
